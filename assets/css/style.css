@@ -950,6 +950,12 @@ a.blog-quote-link:hover .quote-with-bg {
     margin-bottom: 30px;
 }
 
+.about-row .experience sub.date {
+    margin-left: 3px;
+    letter-spacing: -1px;
+    font-family: monospace;
+    color: #acacac;
+}
 
 /*******************************************/
 /*** Pagination Section ***/
