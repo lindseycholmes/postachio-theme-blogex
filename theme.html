@@ -132,7 +132,12 @@
               <div class="post-blog">
 
                 {% if post.content|striptags|wordcount > 0 %}
-                {{ post.content|trim|replace(post.content|trim|truncate(717, True, ''), '<div>') }}
+                {% set post_content = post.content|trim %}
+                  {% if post_content|truncate(10, False, '') == "<div><del " %}
+                  {{ post_content|replace(post_content|truncate(717, True, ''), '<div>') }}
+                  {% else %}
+                  {{ post_content }}
+                  {% endif %}
                 {% endif %}
 
               </div>
@@ -197,7 +202,12 @@
             <div class="post-blog">
 
               {% if post.content|striptags|wordcount > 0 %}
-              {{ post.content|trim|truncate(700, true) }}
+              {% set post_content = post.content|trim %}
+                {% if post_content|truncate(10, False, '') == "<div><del " %}
+                {{ post_content|replace(post_content|truncate(717, True, ''), '<div>') }}
+                {% else %}
+                {{ post_content }}
+                {% endif %}
               {% endif %}
 
             </div>
