@@ -197,7 +197,7 @@
             <div class="post-blog">
 
               {% if post.content|striptags|wordcount > 0 %}
-              {{ post.content|trim }}
+              {{ post.content|trim|first(700)) }}
               {% endif %}
 
             </div>
