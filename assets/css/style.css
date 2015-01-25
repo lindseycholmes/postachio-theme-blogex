@@ -925,12 +925,6 @@ a.blog-quote-link:hover .quote-with-bg {
     text-transform: uppercase;
 }
 
-.about-row h4 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #000;
-}
-
 .about-row p{
     font-size: 14px;
     font-weight: 300;
@@ -940,6 +934,21 @@ a.blog-quote-link:hover .quote-with-bg {
     margin-bottom: 40px;
 }
 
+
+.about-row .experience h3 {
+    margin-bottom: 30px;
+}
+
+.about-row .experience h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about-row .experience p {
+    margin-bottom: 30px;
+}
 
 
 /*******************************************/
