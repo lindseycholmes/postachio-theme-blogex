@@ -132,7 +132,7 @@
               <div class="post-blog">
 
                 {% if post.content|striptags|wordcount > 0 %}
-                {{ post.content|trim|truncate(718, True, '') }}
+                {{ post.content|trim|replace(post.content|trim|truncate(717, True, ''), '') }}
                 {% endif %}
 
               </div>
