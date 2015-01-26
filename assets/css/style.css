@@ -1204,6 +1204,17 @@ blockquote:after {
     bottom: -15px;
 }
 
+
+blockquote > * {
+    text-align: left;
+    margin-left: 30px;
+}
+
+blockquote ul {
+    padding-left: 1.4em;
+}
+
+
 /******** column post *********/
 
 .two-col {
