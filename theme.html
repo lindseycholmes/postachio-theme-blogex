@@ -55,6 +55,7 @@
                             <li><a href="https://github.com/wake" title="LinkedIn" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                             <li><a href="https://www.facebook.com/wake.gs" title="Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                             <li><a href="http://tw.linkedin.com/pub/wake-liu/55/978/91/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="mailto:wake.gs@gmail.com" title="Mail Me" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
                             <li><a href="{{ site.atom_url }}" title="RSS" target="_blank"><i class="fa fa-rss"></i></a></li>
                         </ul>
 
@@ -133,7 +134,7 @@
 
                 {% if post.content|striptags|wordcount > 0 %}
                 {% set post_content = post.content|trim %}
-                  {% if post_content|truncate(10, False, '') == "<div><del " %}
+                  {% if post_content|truncate(10, False, '') == '<div><del ' %}
                   {{ post_content|replace(post_content|truncate(717, True, ''), '<div>') }}
                   {% else %}
                   {{ post_content }}
@@ -203,7 +204,7 @@
 
               {% if post.content|striptags|wordcount > 0 %}
               {% set post_content = post.content|trim %}
-                {% if post_content|truncate(10, False, '') == "<div><del " %}
+                {% if post_content|truncate(10, False, '') == '<div><del ' %}
                 {{ post_content|replace(post_content|truncate(717, True, ''), '<div>') }}
                 {% else %}
                 {{ post_content }}
@@ -497,14 +498,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
-                        <p class="copyright">All rights Reserved &copy; <a href="/">{{ site.name }}</a>. Powered by <a href="http://postach.io" target="_blank">Postach.io</a></p>
+                        <p class="copyright">All rights Reserved &copy; <a href="/">{{ site.name }}</a> | Powered by <a href="http://postach.io" target="_blank">Postach.io</a> | Photos from <a target="_blank" href="https://unsplash.com/grid">unsplash</a></p>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="footer-social">
-                            <a href="https://github.com/wake" title="LinkedIn" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-                            <a href="https://www.facebook.com/wake.gs" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <a href="http://tw.linkedin.com/pub/wake-liu/55/978/91/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <a href="{{ site.atom_url }}" title="RSS" target="_blank"><i class="fa fa-rss"></i></a></li>
+                            <a href="https://github.com/wake" title="LinkedIn" target="_blank"><i class="fa fa-github-alt"></i></a>
+                            <a href="https://www.facebook.com/wake.gs" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="http://tw.linkedin.com/pub/wake-liu/55/978/91/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="mailto:wake.gs@gmail.com" title="Mail me" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                            <a href="{{ site.atom_url }}" title="RSS" target="_blank"><i class="fa fa-rss"></i></a>
                         </div>
                     </div>
                 </div>
