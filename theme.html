@@ -454,10 +454,10 @@
 
       <div class="pagination-post">
         <div class="prev-post">
-        {% if pagination.next %}
-            <a href="{{ pagination.next }}">
+        {% if pagination.prev %}
+            <a href="{{ pagination.prev }}">
               <div class="arrow">
-                <i class="fa fa-angle-double-right"></i>
+                <i class="fa fa-angle-double-left"></i>
               </div>
               <div class="pagination-txt">
                 <span>More Posts</span>
@@ -474,10 +474,10 @@
         </div>
 
         <div class="next-post">
-        {% if pagination.prev %}
-            <a href="{{ pagination.prev }}">
+        {% if pagination.next %}
+            <a href="{{ pagination.next }}">
               <div class="arrow">
-                <i class="fa fa-angle-double-left"></i>
+                <i class="fa fa-angle-double-right"></i>
               </div>
               <div class="pagination-txt">
                 <span>Previous Posts</span>
