@@ -46,8 +46,9 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about" class="{{ set_active('/about') }}">About</a></li>
+              <li><a href="http://wake.gs">Home</a></li>
+              <li><a href="http://cook.wake.gs">Cook</a></li>
+              <li><a href="http://wake.gs/about">About</a></li>
               <li><a href="https://github.com/wake" title="LinkedIn" target="_blank"><i class="fa fa-github-alt"></i></a></li>
               <li><a href="https://www.facebook.com/wake.gs" title="Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
               <li><a href="http://tw.linkedin.com/pub/wake-liu/55/978/91/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
@@ -61,6 +62,10 @@
     <div class="mobile-menu"></div>
   </header>
   <!--header end-->
+
+  <!-- main blog -->
+
+  {% if site.base_url == 'http://wake.gs/' %}
 
   {% if is_home or is_tag %}
 
@@ -421,6 +426,7 @@
     </div>
     <!--about row end-->
 
+  {% endif %}
   {% endif %}
   {% endif %}
 
